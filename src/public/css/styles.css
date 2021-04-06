@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    background-color: #ADA996;
+}
+
+.header__img {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.header__img img {
+    width: 300px;
+}
+
+.header__name {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 100px;
+}
+
+.header__name h3 {
+    margin: 0;
+    font-size: 70px;
+    align-self: normal;
+}
+
+.header__name h1 {
+    font-size: 100px;
+    margin: 0;
+    align-self: normal;
+}
+
+.relevantInfo {
+    background: linear-gradient(#ADA996, 
+    #F2F2F2, #DBDBDB, #EAEAEA);
+    display: grid;
+    grid-template: auto/repeat(3,1fr);
+    padding: 50px;
+}
+
+.relevantInfo__skills {
+    padding-right: 30px;
+}
+
+.relevantInfo__skills-social img {
+    width: 30px;
+}
+
+.social__cont {
+    display: flex;
+}
+
+.social__cont section {
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.relevantInfo__skills-me {
+
+}
+
+.sec__underline {
+    border-bottom: 1px solid black;
+}
+
+.relevantInfo__education {
+ grid-column: 2/5;
+}
+
+.relevantInfo__education-title {
+    border-bottom: solid 1px black;
+}
+
+.relevantInfo__education-courses {
+    display: flex;
+}
+
+.relevantInfo__education-courses img {
+    width: 350px;
+}
