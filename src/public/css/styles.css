@@ -2,9 +2,30 @@ body {
     margin: 0;
 }
 
+h1,h2 {
+    color: #009DDA;
+    margin: 0;
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .header {
     display: flex;
-    background-color: #ADA996;
+    background-color: #009DDA;
+    padding-bottom: 50px;
+    color: #F2F2F2 !important;
 }
 
 .header__img {
@@ -22,6 +43,16 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     padding-left: 100px;
+    font-family: 'Cabin', sans-serif;
+    animation: myName 5s;
+}
+
+@keyframes myName{
+    from{
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
 }
 
 .header__name h3 {
@@ -34,22 +65,36 @@ body {
     font-size: 100px;
     margin: 0;
     align-self: normal;
+    color: #F2F2F2 !important;
 }
 
 .relevantInfo {
-    background: linear-gradient(#ADA996, 
-    #F2F2F2, #DBDBDB, #EAEAEA);
+    background: #F2F2F2;
     display: grid;
     grid-template: auto/repeat(3,1fr);
     padding: 50px;
+    font-family: 'Volkhov', serif;
 }
 
 .relevantInfo__skills {
     padding-right: 30px;
 }
 
+.relevantInfo__skills-social {
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.skills__mar {
+    margin-bottom: 50px;
+}
+
 .relevantInfo__skills-social img {
     width: 30px;
+}
+
+.relevantInfo__skills-social p {
+    font-size: 22px;
+    margin: 5px 0;
 }
 
 .social__cont {
@@ -76,12 +121,27 @@ body {
 
 .relevantInfo__education-title {
     border-bottom: solid 1px black;
+    font-size: 40px;
+}
+
+.relevantInfo__education-title h1 {
+    margin: 0;
 }
 
 .relevantInfo__education-courses {
     display: flex;
+    margin: 20px;
 }
 
 .relevantInfo__education-courses img {
     width: 350px;
+    transition: all 300ms ;
+}
+
+.relevantInfo__education-courses img:hover {
+    transform: scale(1.05);
+}
+
+.relevantInfo__education-courses article {
+    margin-left: 20px;
 }
